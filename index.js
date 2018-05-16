@@ -52,6 +52,10 @@ function stringifyDates(options) {
 	if (options.endDate) {
 		qs.end_date = toDateString(options.endDate);
 	}
+	
+	if (options.projectId) {
+		qs.project_id = options.projectId;
+	}
 
 	return qs;
 }
